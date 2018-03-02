@@ -20,7 +20,7 @@ module.exports = (env) => {
                 { test: /\.css$/, use: isDevBuild ? [ 'style-loader', 'css-loader' ] : ExtractTextPlugin.extract({ use: 'css-loader?minimize' }) },
                 { test: /\.(png|jpg|jpeg|gif|svg)$/, use: 'url-loader?limit=25000' },
                 { test: /\.styl$/, use: isDevBuild ? ['style-loader', 'css-loader', 'stylus-loader'] : ExtractTextPlugin.extract({ use: 'css-loader?minimize' }) },
-                { test: /\.js$/, loader: 'babel-loader?cacheDirectory', include: [/ClientApp/, /vue2-datatable-component/]}
+                { test: /\.js$/, loader: 'babel-loader?cacheDirectory', include: [/ClientApp/, /vue2-datatable-component/] }
             ]
         },
         output: {

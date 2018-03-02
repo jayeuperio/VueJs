@@ -2,6 +2,13 @@ import './css/site.css';
 import 'bootstrap';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import Vuetify from 'vuetify';
+import '../node_modules/vuetify/src/stylus/main.styl'
+import 'vuetify/dist/vuetify.min.css';
+import 'vuetify/dist/vuetify.min.js';
+
+
+Vue.use(Vuetify);
 Vue.use(VueRouter);
 
 const routes = [
